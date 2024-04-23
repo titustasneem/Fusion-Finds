@@ -1,0 +1,65 @@
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .Navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  .Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Navbar li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .Navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* ProductList */
+  .ProductList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Pagination */
+  .Pagination {
+    margin-top: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .ProductList {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Navbar {
+      padding: 10px 0;
+    }
+    
+    .Navbar li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
